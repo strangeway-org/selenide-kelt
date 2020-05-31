@@ -28,7 +28,7 @@ dependencies {
 
 ## Examples:
 
-1. Get element by any of standard By:
+1. Get element by any of standard By (with named arguments instead of By):
     ```kotlin
     open("/login")
     
