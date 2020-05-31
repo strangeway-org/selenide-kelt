@@ -43,7 +43,8 @@ dependencies {
 
 2. Or many elements:
     ```kotlin
-    elts("#search-results a").findBy(text("selenide.org")).click()
+    elts(id = "search-results").shouldBe(visible)
+    elts("#search-results a").elt(text = "selenide.org").click()
     ```
 
 3. Element inside of elements:
