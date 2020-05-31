@@ -16,7 +16,7 @@
 
 @file:Suppress("DuplicatedCode")
 
-package org.strangeway.selenide
+package org.strangeway.kelt
 
 import com.codeborne.selenide.ElementsCollection
 import com.codeborne.selenide.Selectors.*

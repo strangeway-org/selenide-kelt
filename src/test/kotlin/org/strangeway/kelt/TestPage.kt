@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package org.strangeway.selenide
+package org.strangeway.kelt
 
 class TestPage {
     val okBtn = elt(cssClass = ".okBtn")

@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package org.strangeway.selenide
+package org.strangeway.kelt
 
 import com.codeborne.selenide.SelenideConfig
 import com.codeborne.selenide.SelenideDriver

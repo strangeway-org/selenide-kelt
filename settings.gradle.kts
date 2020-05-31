@@ -1,1 +1,1 @@
-rootProject.name = "selenide-kotlin-ext"
+rootProject.name = "selenide-kelt"
