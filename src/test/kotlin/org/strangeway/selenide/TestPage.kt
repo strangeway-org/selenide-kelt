@@ -16,4 +16,7 @@
 
 package org.strangeway.selenide
 
-class TestPage
+class TestPage {
+    val okBtn = elt(cssClass = ".okBtn")
+    val textInput = elt(xpath = "//panel/input[@class='text']")
+}
