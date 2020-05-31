@@ -50,6 +50,7 @@ dependencies {
 3. Element inside of elements:
    ```kotlin
    elt(tag = "header").elt(id = "menu").click()
+   elt(tag = "header").elts(cssClass = "item").shouldHave(size(5))
    ```
 
 2. Build PageObject classes simpler:
