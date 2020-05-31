@@ -1,8 +1,24 @@
-# selenide-kelt
+<h1><img src="https://github.com/strangeway-org/selenide-kelt/blob/master/img/kelt.png" alt="Kelt Helmet" width="64" align="center">Selenide Kelt
+</h1>  
 
 Extension functions to make Selenide tests with Kotlin awesome!
 
-Examples:
+## How to add dependency
+
+Gradle:
+```groovy
+repositories {
+    maven {
+        url "https://dl.bintray.com/strangeway-org/libs" 
+    }
+}
+
+dependencies {
+    test "org.strangeway:selenide-kelt:1.0.1"
+}
+```
+
+## Examples:
 
 1. Get element by any of standard By:
     ```kotlin
@@ -21,7 +37,7 @@ Examples:
     ```kotlin
     elts("#search-results a").findBy(text("selenide.org")).click()
     ```
-   
+
 3. Element inside of elements:
    ```kotlin
    elt(tag = "header").elt(id = "menu").click()
