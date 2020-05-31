@@ -1,5 +1,11 @@
-<h1><img src="https://github.com/strangeway-org/selenide-kelt/blob/master/img/kelt.png" alt="Kelt Helmet" width="64" style="vertical-align: middle;">Selenide Kelt
-</h1>  
+<table><tr>
+  <td>
+    <img src="https://github.com/strangeway-org/selenide-kelt/blob/master/img/kelt.png" alt="Kelt Helmet" width="64px">
+  </td>
+  <td>
+    <h1>Selenide Kelt</h1>
+  </td>
+</tr></table>
 
 Extension functions to make Selenide tests with Kotlin awesome!
 
