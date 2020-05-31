@@ -53,7 +53,7 @@ dependencies {
    elt(tag = "header").elts(cssClass = "item").shouldHave(size(5))
    ```
 
-2. Build PageObject classes simpler:
+2. Build PageObject classes easier:
     ```kotlin
     import org.strangeway.kelt.*
    
@@ -66,7 +66,7 @@ dependencies {
     
         fun search(query: String): GoogleResultsPage {
             searchBox.setValue(query).pressEnter()
-            return page()
+            return page() // no need to duplicate <GoogleResultsPage> type
         }
     }
    
