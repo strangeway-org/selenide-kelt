@@ -11,7 +11,7 @@ Extension functions to make Selenide tests with Kotlin awesome!
 
 [ ![Download](https://api.bintray.com/packages/strangeway-org/libs/selenide-kelt/images/download.svg?version=1.0.1) ](https://bintray.com/strangeway-org/libs/selenide-kelt/1.0.1/link)
 
-## How to add dependency
+## Maven dependency:
 
 Gradle:
 ```groovy
@@ -76,4 +76,7 @@ dependencies {
    
     // ...
     openPage<GoogleSearchPage>("http://google.com").search("Selenide!")
+   
+    // get page on demand without opening
+    val googlePage = page<GoogleResultsPage>()
     ```
