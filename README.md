@@ -54,6 +54,8 @@ dependencies {
 
 2. Build PageObject classes simpler:
     ```kotlin
+    import org.strangeway.kelt.*
+   
     class GoogleResultsPage {
         val results = elt(id = "results")
     }
