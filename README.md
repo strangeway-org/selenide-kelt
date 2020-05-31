@@ -31,7 +31,11 @@ dependencies {
 1. Get element by any of standard By (with named arguments instead of By):
     ```kotlin
     open("/login")
-    
+   
+    // search by CSS as simple as possible:
+    elt("#submit").click()
+   
+    // or you may specify selector explicitly:    
     elt(css = "#submit").click()
     elt(cssClass = "message").shouldHave(text("Hello"))
     
