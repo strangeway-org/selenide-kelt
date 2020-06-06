@@ -9,6 +9,7 @@
 
 Extension functions to make Selenide tests with Kotlin awesome!
 
+[![license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 [ ![Download](https://api.bintray.com/packages/strangeway-org/libs/selenide-kelt/images/download.svg?version=1.0.1) ](https://bintray.com/strangeway-org/libs/selenide-kelt/1.0.1/link)
 
 ## Maven dependency:
