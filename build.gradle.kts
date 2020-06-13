@@ -42,10 +42,6 @@ java {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "org.strangeway"
-            artifactId = "selenide-kelt"
-            version = project.version.toString()
-
             from(components["java"])
 
             pom {
