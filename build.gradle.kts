@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.strangeway"
-version = "1.0.1"
+version = "1.0.2"
 
 repositories {
     jcenter()
@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("com.codeborne:selenide:5.12.2")
+    implementation("com.codeborne:selenide:5.13.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.1")
@@ -45,7 +45,7 @@ publishing {
             from(components["java"])
 
             pom {
-                name.set("Selenide Kotlin Ext")
+                name.set("Selenide Kelt")
                 description.set("Extension functions to make Selenide tests with Kotlin awesome")
                 licenses {
                     license {
