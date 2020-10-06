@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation "org.strangeway:selenide-kelt:1.0.1"
+    testImplementation "org.strangeway:selenide-kelt:1.1.0"
 }
 ```
 

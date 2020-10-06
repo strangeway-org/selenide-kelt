@@ -1,22 +1,22 @@
 plugins {
     java
-    kotlin("jvm") version "1.3.72"
+    kotlin("jvm") version "1.4.10"
     `maven-publish`
 }
 
 group = "org.strangeway"
-version = "1.0.2"
+version = "1.1.0"
 
 repositories {
     jcenter()
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
-    implementation("com.codeborne:selenide:5.13.0")
+    compileOnly(kotlin("stdlib-jdk8"))
+    implementation("com.codeborne:selenide:5.15.1")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
 }
 
 tasks {
