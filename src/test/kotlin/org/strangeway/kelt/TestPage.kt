@@ -17,6 +17,6 @@
 package org.strangeway.kelt
 
 class TestPage {
-    val okBtn = elt(cssClass = ".okBtn")
+    val okBtn = elt(cssClass = "okBtn")
     val textInput = elt(xpath = "//panel/input[@class='text']")
 }

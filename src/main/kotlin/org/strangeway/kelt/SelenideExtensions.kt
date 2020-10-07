@@ -23,17 +23,18 @@ import com.codeborne.selenide.Selectors.*
 import com.codeborne.selenide.Selenide
 import com.codeborne.selenide.SelenideDriver
 import com.codeborne.selenide.SelenideElement
+import org.intellij.lang.annotations.Language
 
 /**
  * Creates Selenide element with the passed selector.
  */
 fun elt(
-    css: String? = null,
-    xpath: String? = null,
-    id: String? = null,
-    name: String? = null,
-    cssClass: String? = null,
-    tag: String? = null,
+    @Language("JQuery-CSS") css: String? = null,
+    @Language("XPath") xpath: String? = null,
+    @Language("selenium-id") id: String? = null,
+    @Language("selenium-name") name: String? = null,
+    @Language("selenium-class") cssClass: String? = null,
+    @Language("selenium-html-tag") tag: String? = null,
     linkText: String? = null,
     partialLinkText: String? = null,
     text: String? = null,
@@ -62,12 +63,12 @@ fun elt(
  * Creates Selenide element with the passed selector.
  */
 fun SelenideElement.elt(
-    css: String? = null,
-    xpath: String? = null,
-    id: String? = null,
-    name: String? = null,
-    cssClass: String? = null,
-    tag: String? = null,
+    @Language("JQuery-CSS") css: String? = null,
+    @Language("XPath") xpath: String? = null,
+    @Language("selenium-id") id: String? = null,
+    @Language("selenium-name") name: String? = null,
+    @Language("selenium-class") cssClass: String? = null,
+    @Language("selenium-html-tag") tag: String? = null,
     linkText: String? = null,
     partialLinkText: String? = null,
     text: String? = null,
@@ -96,12 +97,12 @@ fun SelenideElement.elt(
  * Creates Selenide element with the passed selector.
  */
 fun SelenideDriver.elt(
-    css: String? = null,
-    xpath: String? = null,
-    id: String? = null,
-    name: String? = null,
-    cssClass: String? = null,
-    tag: String? = null,
+    @Language("JQuery-CSS") css: String? = null,
+    @Language("XPath") xpath: String? = null,
+    @Language("selenium-id") id: String? = null,
+    @Language("selenium-name") name: String? = null,
+    @Language("selenium-class") cssClass: String? = null,
+    @Language("selenium-html-tag") tag: String? = null,
     linkText: String? = null,
     partialLinkText: String? = null,
     text: String? = null,
@@ -130,12 +131,12 @@ fun SelenideDriver.elt(
  * Creates Selenide elements collection with the passed selector.
  */
 fun elts(
-    css: String? = null,
-    xpath: String? = null,
-    id: String? = null,
-    name: String? = null,
-    cssClass: String? = null,
-    tag: String? = null,
+    @Language("JQuery-CSS") css: String? = null,
+    @Language("XPath") xpath: String? = null,
+    @Language("selenium-id") id: String? = null,
+    @Language("selenium-name") name: String? = null,
+    @Language("selenium-class") cssClass: String? = null,
+    @Language("selenium-html-tag") tag: String? = null,
     linkText: String? = null,
     partialLinkText: String? = null,
     text: String? = null,
@@ -164,12 +165,12 @@ fun elts(
  * Creates Selenide elements collection with the passed selector.
  */
 fun SelenideElement.elts(
-    css: String? = null,
-    xpath: String? = null,
-    id: String? = null,
-    name: String? = null,
-    cssClass: String? = null,
-    tag: String? = null,
+    @Language("JQuery-CSS") css: String? = null,
+    @Language("XPath") xpath: String? = null,
+    @Language("selenium-id") id: String? = null,
+    @Language("selenium-name") name: String? = null,
+    @Language("selenium-class") cssClass: String? = null,
+    @Language("selenium-html-tag") tag: String? = null,
     linkText: String? = null,
     partialLinkText: String? = null,
     text: String? = null,
@@ -198,12 +199,12 @@ fun SelenideElement.elts(
  * Creates Selenide elements collection with the passed selector.
  */
 fun SelenideDriver.elts(
-    css: String? = null,
-    xpath: String? = null,
-    id: String? = null,
-    name: String? = null,
-    cssClass: String? = null,
-    tag: String? = null,
+    @Language("JQuery-CSS") css: String? = null,
+    @Language("XPath") xpath: String? = null,
+    @Language("selenium-id") id: String? = null,
+    @Language("selenium-name") name: String? = null,
+    @Language("selenium-class") cssClass: String? = null,
+    @Language("selenium-html-tag") tag: String? = null,
     linkText: String? = null,
     partialLinkText: String? = null,
     text: String? = null,

@@ -31,7 +31,7 @@ class GoogleSearchPage {
     }
 }
 
-class GoogleSeachPageTest {
+class GoogleSearchPageTest {
     @Test
     fun test() {
         openPage<GoogleSearchPage>("http://google.com")
