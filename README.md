@@ -10,7 +10,7 @@
 Extension functions to make Selenide tests with Kotlin awesome!
 
 [![license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
-[ ![Download](https://api.bintray.com/packages/strangeway-org/libs/selenide-kelt/images/download.svg?version=1.0.1) ](https://bintray.com/strangeway-org/libs/selenide-kelt/1.0.1/link)
+[ ![Download](https://api.bintray.com/packages/strangeway-org/libs/selenide-kelt/images/download.svg) ](https://bintray.com/strangeway-org/libs/selenide-kelt/_latestVersion)
 
 ## Maven dependency:
 
@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation "org.strangeway:selenide-kelt:1.1.0"
+    testImplementation "org.strangeway:selenide-kelt:1.1.1"
 }
 ```
 
@@ -58,10 +58,10 @@ dependencies {
    elt(tag = "header").elts(cssClass = "item").shouldHave(size(5))
    ```
 
-2. Build PageObject classes easier:
+4. Build PageObject classes easier:
     ```kotlin
     import org.strangeway.kelt.*
-   
+
     class GoogleResultsPage {
         val results = elt(id = "results")
     }
@@ -80,6 +80,18 @@ dependencies {
    
     // get page on demand without opening
     val googlePage = page<GoogleResultsPage>()
+    ```
+   
+5. Check conditions with infix functions:
+    ```kotlin
+    import org.strangeway.kelt.*
+    import com.codeborne.selenide.Condition.*
+   
+    elt(tag = "header") shouldBe visible
+    elt(css = ".footer") shouldHave text("text")
+   
+    elts(".all") shouldBe CollectionCondition.empty
+    elts(".parts") shouldHave CollectionCondition.texts("1", "2")
     ```
 
 ## If you want to support the project
